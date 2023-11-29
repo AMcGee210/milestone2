@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: bisque;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/asthetic_bike.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+#intro {
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+  margin: auto;
+  background-color: grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.right-p{
+  max-width: 50%;
+  font-size: large;
+  font-weight: bold;
+  padding:10px;
+  background-color: rgb(89, 125, 89);
+  margin-left: 10px;
+}
+.left-p{
+  max-width: 50%;
+  font-size: large;
+  font-weight: bold;
+  padding:10px;
+  background-color: rgb(89, 125, 89);
+  margin-right: 10px;
+}
+h1 {
+  font-weight: bolder;
+  text-align: center;
+  margin:auto;
+  background-color: grey;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bikes{
+  max-height: fit-content;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Home</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="milestone1-bikes.html" class="w3-bar-item w3-button">Bikes</a>
+      <a href="milestone1-shops.html" class="w3-bar-item w3-button">Shops</a>
+      <a href="milestone1-trails.html" class="w3-bar-item w3-button">Trails</a>
+      <a href="milestone1-community.html" class="w3-bar-item w3-button">Community</a>
+      <a href="milestone1-miscellaneous.html" class="w3-bar-item w3-button">Miscellaneous</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="milestone1-bikes.html" onclick="w3_close()" class="w3-bar-item w3-button">Bikes</a>
+  <a href="milestone1-shops.html" onclick="w3_close()" class="w3-bar-item w3-button">Shops</a>
+  <a href="milestone1-trails.html" onclick="w3_close()" class="w3-bar-item w3-button">Trails</a>
+  <a href="milestone1-community.html" onclick="w3_close()" class="w3-bar-item w3-button">Community</a>
+  <a href="milestone1-miscellaneous.html" onclick="w3_close()" class="w3-bar-item w3-button">Miscellaneous</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">So Many Bikes</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">All You Need to Know Guide as a Beginner Mountain Biker</span><br>
+    <span class="w3-xlarge">What Bike is Best for You</span>
+  </div> 
+</header>
+
+<p id="intro">There are six main types of mountain bikes you can find, they are all designed for a specific type of riding(some specific, some broad).  With that being said each has its pros and cons based on the preference of the rider.</p>
+<h1>Cross Country Bikes</h1>
+<div class="section">
+  <div>
+  <img src="img/cross-country-bike.jpg" class="bikes" alt="cross country bike" style="width:100%">
+  </div>
+  <p class="right-p">Cross country bikes are designed for the flat windy trails that aren't overly challenging with obstacles.  Because of this these bikes are built for speed and are not geared for hard impacts or steep terrain.  These bikes are light and are for riders who want to get into mountain biking, but don't plan on hitting many jumps or doing any crazy downhill riding.</p>  
+</div>
+<h1>Trail Bikes</h1> 
+<div class="section">
+  <p class="left-p">Trail bikes are a more broad targeting bike. They are more geared towards flat less challenging trails, but can take bigger impacts if needed.  These bikes are for riders who plan to push their limits as a beginner, but can’t see themselves needing a beefier bike at the moment.  These bikes are still geared towards climbing and speed on flats, but are a more versatile ride than a cross country.</p>
+  <div>
+  <img src="img/trail-bike.jpg" class="bikes" alt="trail bike" style="width:100%">
+  </div>
+</div>  
+<h1>Enduro Bikes</h1>
+<div class="section">
+  <div>
+  <img src="img/enduro-bike.jpg" class="bikes" alt="enduro bike" style="width:100%">
+  </div>
+  <p class="right-p">Similarly to the trail bike, enduro bikes find a place in the middle.  Unlike trail bikes, enduro bikes lean more towards a downhill bike build.  An enduro bike can do it all, from the steep climbs of cross country to the techiest of downhill riding.  The only downside to the enduro is although it can do everything, it doesn’t do anything exceptionally.  If you're looking to push your limits, but ride a variety of trails and enduro bike is for you.</p>  
+</div>
+<h1>Downhill Bikes</h1>
+<div class="section">
+  <p class="left-p">Downhill bikes are freight trains on downhill trails, there is nothing a downhill bike can't smash through.  With the downhill geared geometry and an abundance of suspension the downhill bike is incredibly forgiving to a rider on a downhill trail.  Despite its performance downhill these bikes are nearly impossible to ride up a brief incline.  Downhill bikes fall at the polar opposite as a cross country bike being very specific in its use.</p>
+  <div>
+  <img src="img/downhill-bike.jpg" class="bikes" alt="downhill bike" style="width:100%">
+  </div>
+</div>
+<h1>Dirt Jumpers</h1> 
+<div class="section">
+  <div>
+  <img src="img/dirt-jumper-bike.jpg" class="bikes" alt="dirt jumper bike" style="width:100%">
+  </div>
+  <p class="right-p">Dirt jumper bikes are undoubtedly the most unique mountain bike and the most specific because of that.  Dirt jumpers are only used for dirt jumps.  Dirt jumps can be made huge, but with the small frame and very little components the dirt jumper allows the rider to control it extremely well in the air.  Because there is no rough terrain these bikes encounter, the tires have no nobs and they are very small.  These bikes are typically for seasoned riders who want to take their jumping skills to the next level. </p>  
+</div>
+<h1>Fat Bikes</h1>
+<div class="section">
+  <p class="left-p">Fat bikes are also very different from the first four bike types.  Fat bikes have tires that range from four to six inches.  These wide plush tires allow riders to ride in slippery conditions like sand and snow without an issue.  These bikes can also be ridden in the summer too because their massive tires absorb most of the bumps.  These bikes are for the riders that want to continue their riding season confidently through all seasons. </p>
+  <div>
+  <img src="img/fat-bike.png" class="bikes" alt="fat bike" style="width:100%">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
